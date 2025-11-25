@@ -2,7 +2,8 @@ h1 {
   color: #ffd369;
   text-align: center;
   font-size: 3em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px #0a0f24;
+  margin-bottom: 40px;
 }
 
 header .content {
@@ -17,7 +18,7 @@ header .image {
   display: grid;
   grid-template-columns: repeat(2, 200px);
   gap: 20px 40px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 10%;
 }
 
@@ -31,4 +32,64 @@ header .image img {
 
 header .image img:hover {
   transform: scale(1.05);
+}
+
+.explication {
+  display: none;
+  margin-top: 150px;
+  width: 350px;
+  min-height: 200px;
+  background: #ffd369;
+  backdrop-filter: blur(5px);
+  border: 1px solid #ffd369;
+  border-radius: 15px;
+  padding: 20px;
+  color: #0a0f24;
+  box-shadow: 0 4px 12px #0a0f24;
+  margin-left: 50px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.explication h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.explication p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+header .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#img1:checked ~ .explication#text1 {
+  display: block;
+}
+#img2:checked ~ .explication#text2 {
+  display: block;
+}
+#img3:checked ~ .explication#text3 {
+  display: block;
+}
+#img4:checked ~ .explication#text4 {
+  display: block;
+}
+
+input[type="radio"] {
+  display: none;
 }
