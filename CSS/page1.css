@@ -38,7 +38,7 @@ header .image img {
 }
 
 header .image img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   z-index: 5;
 }
 
@@ -80,28 +80,18 @@ header .image img:hover {
 }
 
 #img1:checked ~ .explication#text1 {
-  display: block;
+  display: grid;
 }
 #img2:checked ~ .explication#text2 {
-  display: block;
+  display: grid;
 }
 #img3:checked ~ .explication#text3 {
-  display: block;
+  display: grid;
 }
 #img4:checked ~ .explication#text4 {
-  display: block;
+  display: grid;
 }
 
 input[type="radio"] {
   display: none;
-}
-
-@media (max-width: 800px) {
-  header .content {
-    grid-template-columns: 1fr;
-  }
-  .explication {
-    margin-left: 0;
-    margin-top: 20px;
-  }
 }
