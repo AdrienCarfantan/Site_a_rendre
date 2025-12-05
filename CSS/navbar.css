@@ -48,10 +48,11 @@
   list-style: none;
   padding: 0 50px;
   margin: 0;
-  width: 10px 50px;
+  width: 100%;
 }
 
 .navbar ul li a {
+  font-family: "Space Grotesk", sans-serif;
   opacity: 0;
   transform: translateY(20px);
   display: flex;
