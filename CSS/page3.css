@@ -90,20 +90,20 @@ input:checked + label .textes {
 
 /* Images pour chaque constellation */
 .card[for="c1"] {
-  background-image: url("/images/Constellation/cassiope.webp");
+  background-image: url("../images/Constellation/cassiope.webp");
 }
 .card[for="c2"] {
-  background-image: url("/images/Constellation/petite_ourse.webp");
+  background-image: url("../images/Constellation/petite_ourse.webp");
 }
 .card[for="c3"] {
-  background-image: url("/images/Constellation/draco.webp");
+  background-image: url("../images/Constellation/draco.webp");
 }
 .card[for="c4"] {
-  background-image: url("/images/Constellation/grande_ourse.webp");
+  background-image: url("../images/Constellation/grande_ourse.webp");
 }
 .card[for="c5"] {
-  background-image: url("/images/Constellation/Céphé.webp");
+  background-image: url("../images/Constellation/Céphé.webp");
 }
 .card[for="c6"] {
-  background-image: url("/images/Constellation/Lynx.webp");
+  background-image: url("../images/Constellation/Lynx.webp");
 }
