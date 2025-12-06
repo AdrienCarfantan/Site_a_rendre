@@ -46,6 +46,21 @@ input[type="radio"] {
   z-index: 5;
 }
 
+.card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 1px solid #ffd36988;
+  border-radius: 25px;
+  pointer-events: none;
+  box-shadow: 0 0 15px #ffd36977;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
 .card .textes {
   display: none;
   z-index: 5;
@@ -78,16 +93,16 @@ input:checked + label .textes {
   background-image: url("/images/Constellation/cassiope.webp");
 }
 .card[for="c2"] {
-  background-image: url("/images/Constellation/Céphé.webp");
-}
-.card[for="c3"] {
-  background-image: url("/images/Constellation/grande_ourse.webp");
-}
-.card[for="c4"] {
   background-image: url("/images/Constellation/petite_ourse.webp");
 }
-.card[for="c5"] {
+.card[for="c3"] {
   background-image: url("/images/Constellation/draco.webp");
+}
+.card[for="c4"] {
+  background-image: url("/images/Constellation/grande_ourse.webp");
+}
+.card[for="c5"] {
+  background-image: url("/images/Constellation/Céphé.webp");
 }
 .card[for="c6"] {
   background-image: url("/images/Constellation/Lynx.webp");

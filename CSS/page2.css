@@ -36,6 +36,21 @@ h1 {
   z-index: 5;
 }
 
+.gallery::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 1px solid #ffd36988;
+  border-radius: 25px;
+  pointer-events: none;
+  box-shadow: 0 0 15px #ffd36977;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
 .gallery:hover {
   transform: scale(1.1);
 }
