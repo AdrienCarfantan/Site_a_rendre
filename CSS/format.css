@@ -5,6 +5,11 @@
   list-style: none;
 }
 
+body {
+  background: #0a0f24;
+  color: #ffd369;
+}
+
 .title h1 {
   font-family: "Orbitron", sans-serif;
   font-size: 45px;

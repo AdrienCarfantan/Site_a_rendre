@@ -1,10 +1,142 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Orbitron", sans-serif;
+}
+
+.contact-layout {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 100px 20px;
+}
+
+.glass {
+  background: rgba(10, 15, 36, 0.7);
+  border: 1px solid #ffd36955;
+  border-radius: 20px;
+  padding: 25px 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #ffd36955;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+}
+
+.glass::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 20px;
+  border: 1px solid #ffd36944;
+  box-shadow: 0 0 20px #ffd36966;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glass:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #ffd369aa;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  z-index: 2;
+}
+
+.contact-info h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.contact-info h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.contact-info p,
+.contact-note {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #ffd369cc;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.contact-info li i {
   color: #ffd369;
-  text-align: center;
-  font-size: clamp(2rem, 5vw, 3rem);
-  text-shadow: 2px 2px 4px #0a0f24;
-  margin-top: 20px;
-  z-index: 5;
+}
+
+.contact-form {
+  flex: 1 1 350px;
+  z-index: 2;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ffd36955;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+  outline: none;
+  border-color: #ffd369;
+  box-shadow: 0 0 10px #ffd36955;
+}
+
+.form-disclaimer {
+  font-size: 0.75rem;
+  color: #ffd36988;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ffd369, #ffa500);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd369aa;
 }
