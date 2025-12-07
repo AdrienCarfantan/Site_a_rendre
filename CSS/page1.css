@@ -45,7 +45,7 @@ header .image img:hover {
 
 .explication {
   display: none;
-  margin-top: 200px;
+  margin-top: 165px;
   background: #ffd369;
   backdrop-filter: blur(5px);
   border: 1px solid #ffd369;
@@ -59,14 +59,14 @@ header .image img:hover {
 
 .explication h3 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 24px;
+  font-size: clamp(14px, 1.5vw, 25px);
   margin-bottom: 10px;
   z-index: 5;
 }
 
 .explication p {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 1.5vw, 19px);
   line-height: 1.4;
   z-index: 5;
 }
@@ -97,4 +97,19 @@ header .image img:hover {
 
 input[type="radio"] {
   display: none;
+}
+
+@media (max-width: 900px) {
+  header .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  header .image {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .explication {
+    margin-top: 0;
+  }
 }

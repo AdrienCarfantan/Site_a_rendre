@@ -9,18 +9,22 @@ h1 {
   z-index: 5;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .images {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
   width: 100%;
-  max-width: 1200px;
+  max-width: none;
   margin: 40px 0;
   padding: 0 10px;
   height: 70vh;
-  margin: 40px;
+  padding-left: 40px;
 }
 
 .gallery {
@@ -28,7 +32,7 @@ h1 {
   border: 1px solid #ffd369;
   border-radius: 20px;
   padding: 15px;
-  width: clamp(200px, 30vw, 300px);
+  width: clamp(120px, 24vw, 290px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -67,7 +71,7 @@ h1 {
   max-height: 0;
   overflow: hidden;
   color: #ffd369;
-  font-size: 15px;
+  font-size: clamp(10px, 1.3vw, 15px);
   line-height: 1.4;
   transition: max-height 0.5s ease;
   z-index: 5;
