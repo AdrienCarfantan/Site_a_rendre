@@ -75,7 +75,3 @@ Il suffit d’ouvrir index.html dans votre navigateur.
 HTML5
 
 CSS3
-
-```
-
-```
